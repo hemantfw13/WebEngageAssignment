@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="list"></div>
+  </body>
+</html>
+<script type="text/template" id="template">
+       {% for user in users %}
+         {% if user.id is even %}
+           <div>
+             <h2>{{ user.name }}</h2>
+             <h4>{{ user.username }}</h4>
+             <h5>{{ user.email }}</h5>
+           </div>
+         {% else %}
+           <p>I'm Odd</p>
+         {% endif %}
+
+         {% if user.address %}
+     {% set address = user.address %}
+     {% for key, value in address %}
+       {% if key == 'city' and (value == 'Aliyaview' or value == 'Howemouth' or value == 'Gwenborough') and address.zipcode and address.geo %}
+         <p>The Zipcode and Geo of cityname {{ value }} is: {{ address.zipcode }} and (lat: {{ address.geo.lat }}, lng: {{ address.geo.lng }})</p>
+       {% endif %}
+
+     {% endfor %}
+   {% endif %}
+    {% if user.email and user.email.endsWith('.biz') %}
+     <p>{{ user.name }} - {{ user.email }}</p>
+   {% endif %}
+
+  {% if user.company and user.company.catchPhrase %}
+     {% set catchPhrase = user.company.catchPhrase %}
+     {% if catchPhrase.length <= 15 %}
+       <p>{{ catchPhrase }}</p>
+     {% endif %}
+   {% endif %}
+       {% endfor %}
+</script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/nunjucks/browser/nunjucks.min.js"></script>
+<script src="index.js"></script>
