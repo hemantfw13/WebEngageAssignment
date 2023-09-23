@@ -12,7 +12,7 @@ Subject: Request for Task 1 Extension
 
 Dear Manoj,
 
-I hope this message finds you well. I wanted to inform you of an urgent matter that has arisen. Unfortunately, due to a family emergency, I won't be able to meet the original due date for Task 1, which is scheduled for tomorrow. 
+I hope this message finds you well. I wanted to inform you of an urgent matter that has arisen. Unfortunately, due to a family emergency, I won't be able to meet the original due date for Task 1, which is scheduled for tomorrow.
 
 As Task 1 pertains to a low-priority customer who hasn't provided a specific go-live date, I believe it would be in the best interest of both parties to request a brief extension for this task. This extension will ensure we can deliver the best quality work once I'm back on track.
 
@@ -21,7 +21,9 @@ I will promptly send an email to the customer explaining the situation and reque
 Thank you for your understanding and support during this challenging time.
 
 Best regards,
+<br>
 Hemant Ahire
+
 <hr/>
 
 ### Internal Message to Ravi (Account Manager for Task 2):
@@ -41,6 +43,7 @@ I will keep you updated on our progress and any adjustments to the timeline. If 
 Thank you for your understanding and support during this challenging time.
 
 Best regards,
+<br>
 Hemant Ahire
 
 <hr/>
@@ -64,7 +67,5 @@ Once again, we apologize for any inconvenience this delay may cause and apprecia
 Thank you for your trust in our services.
 
 Best regards,
+<br>
 Hemant Ahire
-
-
-
