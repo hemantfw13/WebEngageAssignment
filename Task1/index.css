@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height:99%;
+    width: 100%;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.backImg{
+    height: 100%;
+    width: 50%;
+}
+.backImg img{
+    height: 100%;
+}
+.logoImg{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.logoImg img{
+    padding: 1vw 4vw;
+    height: 25%;
+    width: 100%;
+}
+.logoImg h1{
+    text-align: center;
+    font-size: 4vw;
+    line-height: 7vw;
+    justify-content: center;
+    font-weight: 100%;
+}
+.logoImg h3{
+    text-align: center;
+    font-size: 2vw;
+
+
+}
+.logoImg .form{
+    padding: 2vw 3vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.logoImg .form .email{
+    margin-top: 2vw;
+    line-height: 2vw;
+    height: 4vw;
+    width: 90%;
+    font-size: medium;
+    padding-left: 20px;
+}
+.logoImg .form .innerDiv{
+    margin-top: 2vw;
+    display: flex;
+    height: 4vw;
+    line-height: 2vw;
+    width: 90%;
+}
+.innerDiv .countryCode{
+    width: 25%;
+    padding-left: 10px;
+    
+
+
+}
+.innerDiv .mobileNumber{
+    width: 100%;
+    padding-left: 20px;
+    font-size: medium;
+
+
+}
+.submitButton{
+    margin-top: 2vw;
+    height: 4vw;
+    width: 90%;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+}
+.errorMessage{
+    margin-top: 20px;
+    color: red;
+}
+
+
+@media (max-width:600px) {
+    .box{
+        height: 100%;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .backImg{
+        width: 100%;
+        height: 40%;
+        /* padding: 4vw 6vw; */
+        margin-left: 10%;
+    }
+    .logoImg{
+        width: 100%;
+        height: 60%;
+    }
+    .logoImg h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .logoImg h3{
+        font-size: 5vw;
+    }
+    .logoImg .form{
+        height: 100%;
+        width: 100%;
+        margin: 2vw 4vw;
+        padding: 3vw 4vw;
+    }
+    .logoImg .form .email{
+        margin-top: 2vw;
+        line-height: 2vw;
+        height: 12vw;
+        width: 90%;
+        font-size: medium;
+    }
+    .logoImg .form .innerDiv{
+        height: 12vw;
+        width: 90%;
+        margin-top: 5vw;
+    }
+    .innerDiv .countryCode{
+        margin-top: 2vw;
+        width: 25%;
+        height: 12vw;
+    }
+    .innerDiv .mobileNumber{
+        margin-top: 2vw;
+        width: 100%;
+        height: 12vw;
+    }
+    .submitButton{
+        line-height: 2vw;
+        height: 12vw;
+        width: 90%;
+        font-size: medium;
+        margin-top: 10vw;
+    }
+}
